@@ -38,4 +38,11 @@ section.product {
 
 .variations ul li {
   padding-bottom: 6px;
+  text-transform: capitalize;
+}
+.size {
+  font-size: 1.5em;
+}
+.finish {
+  font-size: 1.5em;
 }
