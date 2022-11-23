@@ -42,7 +42,7 @@ const PDP: NextPage = () => {
           ) : !error ? (
             <>
               <ProductDetails primary_image={data?.primary_image} title={data?.title} sku={data?.sku} />
-              <ProductVariations sizes={data?.bed_size_c} finish={data?.finish} />
+              <ProductVariations sizes={data?.variations.size} finish={data?.variations.finish} />
             </>
           ) : (
             <>

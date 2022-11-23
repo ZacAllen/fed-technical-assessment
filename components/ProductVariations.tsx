@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
 type ProductVariationsProps = {
-  sizes?: [] | null
-  finish?: [] | null
+  sizes?: [any] | null
+  finish?: [any] | null
 }
 
 export default function ProductVariations({ sizes, finish }: ProductVariationsProps) {
@@ -14,7 +14,7 @@ export default function ProductVariations({ sizes, finish }: ProductVariationsPr
         {sizes?.map((size) => {
           return (
             <li key="{size}" className="list">
-              {size}
+              {size?.variation_value}
             </li>
           )
         })}
@@ -25,7 +25,7 @@ export default function ProductVariations({ sizes, finish }: ProductVariationsPr
         {finish?.map((finish) => {
           return (
             <li key="{finish}" className="list">
-              {finish}
+              {finish?.variation_value}
             </li>
           )
         })}
